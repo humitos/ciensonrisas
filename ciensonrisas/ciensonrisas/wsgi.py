@@ -15,6 +15,16 @@ framework.
 """
 import os
 
+import site
+envpath = '/home/humitos/.virtualenvs/ciensonrisas.com.ar/lib/python2.6/site-packages'
+site.addsitedir(envpath)
+
+# Avoid ``[Errno 13] Permission denied: '/var/www/.python-eggs'`` messages
+import os
+os.environ['PYTHON_EGG_CACHE'] = '/home/humitos/apps/ciensonrisas.com.ar/mod_wsgi/egg-cache'
+
+#If your project is not on your PYTHONPATH by default you can add the following
+sys.path.append('/home/humitos/apps/ciensonrisas.com.ar/ciensonrisas/ciensonrisas')
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "ciensonrisas.settings")
 
 # This application object is used by any WSGI server configured to use this
