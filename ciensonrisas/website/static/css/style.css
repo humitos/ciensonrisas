@@ -69,9 +69,16 @@ div.content
    margin-left: 70px;
    margin-top: 50px;
    font-size: 12pt;
+   text-indent: 25px;
 }
 
 .index-notes ul
 {
     list-style-type: none;
+}
+
+.sign
+{
+    margin-top: 100px;
+    text-align: right;
 }
