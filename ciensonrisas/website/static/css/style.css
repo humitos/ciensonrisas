@@ -51,3 +51,27 @@ body
 {
     display: inline;
 }
+
+.smile {
+    margin-top: 50px;
+    margin-left: 70px;
+
+}
+
+.red
+{
+    color: #c42a1d;
+}
+
+div.content
+{
+   max-width: 800px;
+   margin-left: 70px;
+   margin-top: 50px;
+   font-size: 12pt;
+}
+
+.index-notes ul
+{
+    list-style-type: none;
+}

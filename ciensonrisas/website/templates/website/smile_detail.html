@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+
+{% block title %}Miralas{% endblock %}
+
+{% block body %}
+<div class="smile">
+{% thumbnail object.photo "700x600" crop="center" as im %}
+  <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}" />
+{% endthumbnail %}
+</div>
+{% endblock %}
