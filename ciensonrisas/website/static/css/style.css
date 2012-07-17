@@ -1,0 +1,17 @@
+body
+{
+    background-image: url('../images/banner_right.jpg');
+    background-color: #404042;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.top-menu
+{
+    list-style-type: none;
+}
+
+.top-menu ul, .top-menu li
+{
+    display: inline;
+}

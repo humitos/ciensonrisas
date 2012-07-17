@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+
+    <title>{% block title %}{% endblock %} | ciensonrisas.com.ar</title>
+
+    <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet" type="text/css">
+
+    {% block head %}{% endblock %}
+  </head>
+  <body>
+    <!-- Top menu -->
+    {% include "top_menu.html" %}
+
+    {% block body %}{% endblock %}
+  </body>
+</html>
