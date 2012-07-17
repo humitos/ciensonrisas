@@ -38,3 +38,15 @@ body
     text-decoration: none;
     color: #828284;
 }
+
+.places
+{
+    list-style-type: none;
+    margin-left: 30px;
+    width: 900px;
+}
+
+.places ul, .places li
+{
+    display: inline;
+}
