@@ -6,7 +6,7 @@ body
     background-position: right top;
     font-size: 16pt;
     font-family: 'Port Lligat Sans', sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #828284;
 }
 
