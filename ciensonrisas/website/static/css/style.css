@@ -4,14 +4,37 @@ body
     background-color: #404042;
     background-repeat: no-repeat;
     background-position: right top;
+    font-size: 16pt;
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-weight: bold;
+    color: #828284;
 }
 
 .top-menu
 {
+    margin-top: 50px;
     list-style-type: none;
 }
 
 .top-menu ul, .top-menu li
 {
     display: inline;
+}
+
+.top-menu li
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.top-menu.selected
+{
+    /* The red color is not shown */
+    color: #c42a1d;
+}
+
+.top-menu li a
+{
+    text-decoration: none;
+    color: #828284;
 }
