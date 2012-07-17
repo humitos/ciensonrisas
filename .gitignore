@@ -1,5 +1,8 @@
 *.py[co]
 *~
+*#
+
+data.sqlite3
 
 # Packages
 *.egg
