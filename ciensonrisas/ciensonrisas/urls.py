@@ -1,11 +1,11 @@
 from django.conf.urls import patterns, include, url
 
-from django.views.generic import TemplateView
 from django.views.generic import ListView
 
 from website.models import Place
 from website.views import PlaceDetailView
 from website.views import SmileDetailView
+from website.views import IndexTemplateView
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -22,7 +22,8 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^$', TemplateView.as_view(template_name='index.html'), name='home'),
+    url(r'^$', IndexTemplateView.as_view(template_name='index.html'),
+        name='home'),
     url(r'^miralas$', ListView.as_view(model=Place), name='places'),
     url(r'^miralas/place/(?P<pk>\d+)$', PlaceDetailView.as_view(),
         name='place_detail'),

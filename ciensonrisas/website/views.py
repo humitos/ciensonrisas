@@ -1,4 +1,5 @@
 from django.views.generic import DetailView
+from django.views.generic import TemplateView
 from website.models import Place
 from website.models import Smile
 
@@ -29,3 +30,7 @@ class SmileDetailView(DetailView):
         # object.save()
         # Return the object
         return object
+
+
+class IndexTemplateView(TemplateView):
+    pass

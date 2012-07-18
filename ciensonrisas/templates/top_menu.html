@@ -1,6 +1,6 @@
 <ul class="top-menu">
-  <li{% if section != "que-es" %} class="selected"{% endif %}><a href="{% url home %}">Qué es?</a></li> | 
-  <li><a href="{% url places %}">Miralas</a></li> | 
+  <li><a class="selected" href="{% url home %}">Qué es?</a></li> | 
+  <li{% if section == "miralas" %} class="selected"{% endif %}><a href="{% url places %}">Miralas</a></li> | 
   <li><a href="">Bajate esto</a></li> | 
   <li><a href="">Amigos</a></li> |
   <li><a href="">Escribinos</a></li>

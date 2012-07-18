@@ -27,7 +27,7 @@ body
     margin-right: 30px;
 }
 
-.top-menu.selected
+ul.top-menu li a.selected
 {
     /* The red color is not shown */
     color: #c42a1d;
