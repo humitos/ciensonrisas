@@ -7,7 +7,7 @@ body
     font-size: 16pt;
     font-family: 'Port Lligat Sans', sans-serif;
     /* font-weight: bold; */
-    color: #828284;
+    color: #babcbe;
 }
 
 .top-menu
@@ -36,7 +36,7 @@ ul.top-menu li a.selected
 .top-menu li a
 {
     text-decoration: none;
-    color: #828284;
+    color: #babcbe;
 }
 
 .places
@@ -60,7 +60,17 @@ ul.top-menu li a.selected
 
 .red
 {
+    background-image: url('../images/stencil.png');
+    background-color: #404042;
+    background-repeat: no-repeat;
+    background-position: left top;
     color: #c42a1d;
+    font-size: 13.5pt;
+    height: 100px;
+    padding-left: 90px;
+    padding-top: 55px;
+    text-indent: 0 !important;
+    font-weight: bold;
 }
 
 div.content
@@ -68,7 +78,7 @@ div.content
    max-width: 800px;
    margin-left: 70px;
    margin-top: 50px;
-   font-size: 12pt;
+   font-size: 13pt;
    text-indent: 25px;
 }
 
