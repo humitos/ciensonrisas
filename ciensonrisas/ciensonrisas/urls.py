@@ -6,6 +6,7 @@ from website.models import Place
 from website.views import PlaceDetailView
 from website.views import SmileDetailView
 from website.views import IndexTemplateView
+from website.views import MessageCreate
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -29,6 +30,8 @@ urlpatterns = patterns('',
         name='place_detail'),
     url(r'^miralas/smile/(?P<pk>\d+)$', SmileDetailView.as_view(),
         name='smile_detail'),
+    url(r'^contact$', MessageCreate.as_view(),
+        name='contact_form'),
 )
 
 

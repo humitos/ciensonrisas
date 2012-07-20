@@ -7,6 +7,10 @@ TODO
  * add "Smile description" on smile detail
  * mouse hover in place thumbs (description of the place)
  * mouse hover in smile thumbs (number of the smile)
+ * paginate the results on Place Detail View
+ * favicon
+ * thumbnails of places without the red square
+ * Send button is missing in Contact Form
 
 
 DONE

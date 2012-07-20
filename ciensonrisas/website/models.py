@@ -34,9 +34,8 @@ class Author(models.Model):
 
 
 class Message(models.Model):
-    first_name = models.CharField(max_length=30, null=True, blank=True)
-    last_name = models.CharField(max_length=30, null=True, blank=True)
-    nickname = models.CharField(max_length=30, null=True, blank=True)
+    name = models.CharField(max_length=30)
     email = models.EmailField()
-    url = models.URLField()
+    url = models.URLField(null=True, blank=True)
+    subject = models.CharField(max_length=100)
     message = models.TextField()

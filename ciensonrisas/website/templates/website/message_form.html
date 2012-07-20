@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Escríbenos{% endblock %}
+
+{% block body %}
+<img class="stencil-contact" src="{{ STATIC_URL}}images/stencil.png" title="Stencil" />
+
+<div class="contact-form">
+  <form name="contact" action="." method="POST">
+    <table>
+      {{ form.as_table }}
+    </table>
+    <input type="submit" />
+  </form>
+</div>
+
+<div class="contact-icons">
+  <table>
+    <tr>
+      <th>
+	<a href="https://twitter.com/soyelnes">
+	  <img src="{{ STATIC_URL }}images/twitter.png" title="Twitter"/>
+	</a>
+      </th>
+      <td>
+	<a href="https://twitter.com/soyelnes">ciensonrisas</a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>
+	<a href="http://www.flickr.com/photos/ciensonrisas">
+	  <img src="{{ STATIC_URL }}images/flickr.png" title="Flickr"/>
+	</a>
+      </th>
+      <td>
+	<a href="http://www.flickr.com/photos/ciensonrisas">ciensonrisas</a>
+      </td>
+    </tr>
+
+    <tr>
+      <th>
+	<a href="mailto:ciensonrisas@gmail.com">
+	  <img src="{{ STATIC_URL }}images/email.png" title="Email"/>
+	</a>
+      </th>
+      <td>
+	<a href="mailto:ciensonrisas@gmail.com">ciensonrisas@gmail.com</a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+{% endblock %}

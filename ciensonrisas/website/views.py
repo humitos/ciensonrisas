@@ -1,7 +1,10 @@
 from django.views.generic import DetailView
 from django.views.generic import TemplateView
+from django.views.generic.edit import CreateView
+
 from website.models import Place
 from website.models import Smile
+from website.models import Message
 
 
 class PlaceDetailView(DetailView):
@@ -34,3 +37,7 @@ class SmileDetailView(DetailView):
 
 class IndexTemplateView(TemplateView):
     pass
+
+
+class MessageCreate(CreateView):
+    model = Message

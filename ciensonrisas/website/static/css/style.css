@@ -53,6 +53,12 @@ ul.top-menu li a.selected
     display: inline;
 }
 
+.places li a
+{
+    text-decoration: none;
+    margin: 2px;
+}
+
 .smile {
     margin-top: 50px;
     margin-left: 70px;
@@ -91,4 +97,55 @@ div.content
 {
     margin-top: 100px;
     text-align: right;
+}
+
+.contact-form
+{
+    margin-top: 50px;
+}
+
+.contact-form label
+{
+    margin-right: 5px;
+    font-weight: normal !important;
+    font-size: 12pt;
+}
+
+.contact-form th
+{
+    text-align: right;
+}
+
+.contact-icons
+{
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.contact-icons th
+{
+    text-align: right;
+}
+
+.contact-icons a
+{
+    text-decoration: none;
+    font-size: 12pt;
+    color: #babcbe;
+}
+
+.stencil-contact
+{
+    float: left;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+input, textarea
+{
+    border: 1px solid #5a5a5c;
+    background-color: #404042;
+    padding: 4px;
+    color: #babcbe;
+    width: 300px;
 }
