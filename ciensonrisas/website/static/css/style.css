@@ -4,6 +4,7 @@ body
     background-color: #404042;
     background-repeat: no-repeat;
     background-position: right top;
+    background-attachment: fixed;
     font-size: 16pt;
     font-family: 'Port Lligat Sans', sans-serif;
     /* font-weight: bold; */
