@@ -12,7 +12,7 @@ class Place(models.Model):
 
 class Smile(models.Model):
     number = models.IntegerField()
-    description = models.TextField()
+    description = models.TextField(null=True, blank=True)
     photo = models.ImageField(upload_to='smiles')
     place = models.ForeignKey('Place')
     author = models.ForeignKey('Author')
@@ -31,3 +31,12 @@ class Author(models.Model):
 
     def __unicode__(self):
         return self.nickname
+
+
+class Message(models.Model):
+    first_name = models.CharField(max_length=30, null=True, blank=True)
+    last_name = models.CharField(max_length=30, null=True, blank=True)
+    nickname = models.CharField(max_length=30, null=True, blank=True)
+    email = models.EmailField()
+    url = models.URLField()
+    message = models.TextField()
