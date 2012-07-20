@@ -61,7 +61,6 @@ ul.top-menu li a.selected
 .red
 {
     background-image: url('../images/stencil.png');
-    background-color: #404042;
     background-repeat: no-repeat;
     background-position: left top;
     color: #c42a1d;
