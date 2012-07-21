@@ -41,3 +41,4 @@ class IndexTemplateView(TemplateView):
 
 class MessageCreate(CreateView):
     model = Message
+    success_url = '/contact/thanks'

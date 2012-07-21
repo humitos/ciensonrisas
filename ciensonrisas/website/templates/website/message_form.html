@@ -6,11 +6,12 @@
 <img class="stencil-contact" src="{{ STATIC_URL}}images/stencil.png" title="Stencil" />
 
 <div class="contact-form">
-  <form name="contact" action="." method="POST">
+  <form name="contact" action="{% url contact_form %}" method="POST">
+    {% csrf_token %}
     <table>
       {{ form.as_table }}
     </table>
-    <input type="submit" />
+    <input class="submit" type="submit" value="Enviar"/>
   </form>
 </div>
 

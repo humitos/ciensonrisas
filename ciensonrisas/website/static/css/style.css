@@ -149,3 +149,17 @@ input, textarea
     color: #babcbe;
     width: 300px;
 }
+
+.submit
+{
+    margin-top: 20px;
+    margin-left: 395px;
+    width: 170px;
+}
+
+.contact-thanks
+{
+    margin-left: 70px;
+    margin-top: 70px;
+    font-size: 13.5pt;
+}

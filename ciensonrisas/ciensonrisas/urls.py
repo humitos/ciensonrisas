@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 
 from django.views.generic import ListView
+from django.views.generic import TemplateView
 
 from website.models import Place
 from website.views import PlaceDetailView
@@ -32,6 +33,8 @@ urlpatterns = patterns('',
         name='smile_detail'),
     url(r'^contact$', MessageCreate.as_view(),
         name='contact_form'),
+    url(r'^contact/thanks$', TemplateView.as_view(template_name='thanks.html'),
+        name='contact_thanks'),
 )
 
 
