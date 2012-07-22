@@ -1,6 +1,8 @@
 from django.views.generic import DetailView
 from django.views.generic import TemplateView
 from django.views.generic.edit import CreateView
+from django.template import RequestContext
+from django.shortcuts import render_to_response
 
 from website.models import Place
 from website.models import Smile
@@ -19,6 +21,15 @@ class PlaceDetailView(DetailView):
         # object.save()
         # Return the object
         return object
+
+
+def smile_detail(request, place_slug, number):
+    smile = Smile.objects.get(number=number, place__slug=place_slug)
+    context = {
+        'object': smile,
+        }
+    return render_to_response('website/smile_detail.html',
+                              RequestContext(request, context))
 
 
 class SmileDetailView(DetailView):

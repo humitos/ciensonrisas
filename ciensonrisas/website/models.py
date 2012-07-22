@@ -3,6 +3,7 @@ from django.db import models
 
 class Place(models.Model):
     name = models.CharField(max_length=30)
+    slug = models.SlugField()
     description = models.TextField()
     photo = models.ImageField(upload_to='places')
 

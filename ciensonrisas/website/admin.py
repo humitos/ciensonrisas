@@ -7,7 +7,7 @@ from website.models import Message
 
 
 class PlaceAdmin(admin.ModelAdmin):
-    pass
+    prepopulated_fields = {'slug': ('name',)}
 
 
 class SmileAdmin(admin.ModelAdmin):

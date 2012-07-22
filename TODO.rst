@@ -2,7 +2,6 @@ TODO
 ====
 
  * "red" color is not visible
- * use SLUG for "/miralas/place/2" (instead of "place")
  * add BACK button when the user is looking at a smile
  * add "Smile description" on smile detail
  * mouse hover in place thumbs (description of the place)
@@ -10,8 +9,9 @@ TODO
  * paginate the results on Place Detail View
  * favicon
  * thumbnails of places without the red square
- * Send button is missing in Contact Form
+ * send mail after comment
 
+ * disqus on smiles?
 
 DONE
 ====
@@ -19,3 +19,6 @@ DONE
  * nes sign has a different color
  * index image (next to red text) is missing
  * base right image should be exported in better quality
+ * Send button is missing in Contact Form
+ * add google analytics service
+ * use SLUG for "/miralas/place/2" (instead of "place")

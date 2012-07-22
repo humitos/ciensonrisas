@@ -8,7 +8,7 @@
   {% for smile in object.smile_set.all %}
   {% thumbnail smile.photo "284x220" crop="center" as im %}
   <li>
-    <a href="{% url smile_detail smile.pk %}">
+    <a href="{% url smile_detail place.slug smile.number %}">
       <img src="{{ im.url }}" width="{{ im.x }}" height="{{ im.y }}" />
     </a>
   </li>
