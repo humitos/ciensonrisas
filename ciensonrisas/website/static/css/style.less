@@ -1,0 +1,248 @@
+/* ciensonrisas.com.ar stylesheet */
+
+/* Some colors */
+@normalfontcolor: #BABCBE;
+@highlightedfontcolor: #C42A1D;
+@backgroundcolor: #404042;
+
+/* Font sizes */
+@menufontsize: 1.3em;
+@missionfontsize: 1.06em;
+@contentfontsize: 0.8em;
+@watermarkfontsize: 0.7em;
+
+/* Some functions */
+.opacity(@opacity: 0.5) {
+    -moz-opacity: @opacity;
+    -khtml-opacity: @opacity;
+    -webkit-opacity: @opacity;
+    opacity: @opacity;
+}
+
+.transition(@duration:0.2s, @ease:ease-out) {
+    -webkit-transition: all @duration @ease;
+    -moz-transition: all @duration @ease;
+    -o-transition: all @duration @ease;
+    transition: all @duration @ease;
+}
+
+body
+{
+    background-image: url('../images/banner_right.png');
+    background-color: @backgroundcolor;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    font-size: @menufontsize;
+    font-family: 'Port Lligat Sans', sans-serif;
+    /* font-weight: bold; */
+    color: @normalfontcolor;
+}
+
+.top-menu
+{
+    margin-top: 50px;
+
+    ul
+    {
+	list-style-type: none;
+	display: inline;
+    }
+
+    li
+    {
+	display: inline;
+	margin-left: 30px;
+	margin-right: 30px;
+
+	a
+	{    
+	    text-decoration: none;
+	    color: @normalfontcolor;
+	    
+	}
+
+	a.selected
+	{
+	    /* The red color is not shown */
+	    color: @highlightedfontcolor;
+	}
+    }
+}
+
+.places
+{
+    list-style-type: none;
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 900px;
+
+    ul
+    {
+	width: 247px;
+	height: 192px;
+	display: inline;
+    }
+
+    li
+    {
+	width: 247px;
+	height: 192px;
+	display: inline;
+
+	a
+	{
+	    text-decoration: none;
+	    margin: 2px;
+	    width: 247px;
+	    height: 192px;
+	    display: inline;
+	}
+    }
+}
+
+.watermark
+{
+    width: 247px;
+    height: 192px;
+    position: absolute;
+    z-index: 2;
+    display: inline;
+    .opacity(0);
+    .transition(.8s);
+
+    span
+    {
+	/* background: url(../img/icons/heart_green_medium.png) no-repeat center 25px rgba(255, 255, 255, .7); */
+	background-color: red;
+	color: white;
+	display: block;
+	opacity: 0.2;
+	width: 170px;
+	height: 60px;
+
+	padding-top: 25px;
+	line-height: 15px;
+
+	text-align: center;
+	margin-left: 39px;
+	margin-right: 39px;
+	margin-top: 54px;
+	margin-bottom: 54px;
+
+	font-size: @watermarkfontsize;
+	font-family: 'Port Lligat Sans', sans-serif;
+        /* position: absolute; */
+        /* margin: 25%; */
+        /* padding: 25%; */
+    }
+
+    &:hover
+    {
+	.opacity(1);
+    }
+}
+
+.smile {
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.red
+{
+    background-image: url('../images/stencil.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    color: @highlightedfontcolor;
+    font-size: @missionfontsize;
+    height: 100px;
+    padding-left: 90px;
+    padding-top: 55px;
+    text-indent: 0 !important;
+    font-weight: bold;
+}
+
+div.content
+{
+   max-width: 800px;
+   margin-left: 70px;
+   margin-top: 50px;
+   font-size: @contentfontsize;
+   text-indent: 25px;
+}
+
+.index-notes ul
+{
+    list-style-type: none;
+}
+
+.sign
+{
+    margin-top: 100px;
+    text-align: right;
+}
+
+.contact-form
+{
+    margin-top: 50px;
+
+    label
+    {
+	margin-right: 5px;
+	font-weight: normal !important;
+	font-size: @contentfontsize;
+    }
+
+    th
+    {
+	text-align: right;
+    }
+}
+
+.contact-icons
+{
+    margin-top: 50px;
+    margin-left: 250px;
+
+    th 
+    {
+	text-align: right;
+    }
+
+    a
+    {	
+	text-decoration: none;
+	font-size: @contentfontsize;
+	color: @normalfontcolor;
+    }
+}
+
+.stencil-contact
+{
+    float: left;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+input, textarea
+{
+    border: 1px solid #5a5a5c;
+    background-color: @backgroundcolor;
+    padding: 4px;
+    color: @normalfontcolor;
+    width: 300px;
+}
+
+.submit
+{
+    margin-top: 20px;
+    margin-left: 395px;
+    width: 170px;
+}
+
+.contact-thanks
+{
+    margin-left: 70px;
+    margin-top: 70px;
+    font-size: @contentfontsize;
+}
