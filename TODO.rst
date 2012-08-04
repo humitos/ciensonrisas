@@ -12,6 +12,8 @@ TODO
  * send mail after comment
 
  * disqus on smiles?
+ * generic templates 404.html - 500.html
+ * robots.txt
 
 DONE
 ====
