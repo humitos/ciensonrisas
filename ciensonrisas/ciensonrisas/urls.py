@@ -14,6 +14,8 @@ from website.views import smile_detail
 from django.contrib import admin
 admin.autodiscover()
 
+from django.http import HttpResponse
+
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'ciensonrisas.views.home', name='home'),
@@ -36,6 +38,9 @@ urlpatterns = patterns('',
         name='contact_form'),
     url(r'^contact/thanks$', TemplateView.as_view(template_name='thanks.html'),
         name='contact_thanks'),
+
+
+    (r'^robots\.txt$', lambda r: HttpResponse("User-agent: *\nDisallow: /", mimetype="text/plain"))
 )
 
 
