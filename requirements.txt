@@ -3,7 +3,7 @@ Fabric==1.4.3
 PIL==1.1.7
 South==0.7.5
 django-extensions==0.9
-ipython==0.13
+ipython==7.16.3
 pycrypto==2.6
 sorl-thumbnail==11.12
 ssh==1.7.14
